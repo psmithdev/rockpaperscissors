@@ -21,11 +21,32 @@
 
 // getComputerChoice();
 
-function getComputerChoice(rock, paper, scissors) {
-    return rock
-}
-function getComputerChoice(rock, paper, scissors) {
-    return (rock, paper, scissors);
+// function getComputerChoice(rock, paper, scissors) {
+//     return rock
+// }
+// function getComputerChoice(rock, paper, scissors) {
+//     return (rock, paper, scissors);
+// }
+
+// console.log(getComputerChoice());
+
+//function 1 randomly return either "rock", "paper", "scissors"
+function getComputerChoice() {
+    let num = Math.floor(Math.random() * 3 );
+
+    switch (num) {
+        case 0:
+            return "rock";
+            break;
+        
+        case 1:
+            return "paper";
+            break;
+
+        default:
+            return "scissors";
+            break;
+    }
 }
 
 console.log(getComputerChoice());
