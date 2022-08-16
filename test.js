@@ -49,4 +49,23 @@ function getComputerChoice() {
     }
 }
 
-console.log(getComputerChoice());
+// console.log(getComputerChoice());
+
+let pick = prompt("Enter your 3 choices: Rock, Paper, Scissors");
+
+const playerSelection = "rock";
+const computerSelection = getComputerChoice();
+
+function singleRound(playerSelection, computerSelection) {
+    if (pick.toLowerCase(playerSelection > computerSelection) ) {
+        return "You win!";
+    } else if (pick.toLowerCase(playerSelection < computerSelection) ) {
+        return "You lose :(";
+    } else {
+        return "it's a tie";
+    }
+
+    return null;
+}
+
+console.log(singleRound(playerSelection, computerSelection) );
