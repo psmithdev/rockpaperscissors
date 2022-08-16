@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //  function getComputerChoice(rock, paper, scissors) {
 //     return (rock, paper, scissors);
 // }
@@ -25,10 +24,8 @@
 function getComputerChoice(rock, paper, scissors) {
     return rock
 }
-=======
 function getComputerChoice(rock, paper, scissors) {
     return (rock, paper, scissors);
 }
 
 console.log(getComputerChoice());
->>>>>>> ce2e73119bbb8929c9950ef002dbdfe5bc1e8747
