@@ -1,45 +1,46 @@
-//  function getComputerChoice(rock, paper, scissors) {
-//     return (rock, paper, scissors);
-// }
+/* 
+ function getComputerChoice(rock, paper, scissors) {
+    return (rock, paper, scissors);
+}
 
-// console.log(getComputerChoice());
+console.log(getComputerChoice());
 
-// function greeting() {
-//     console.log("Hello good morning");
-// }
+function greeting() {
+    console.log("Hello good morning");
+}
 
-// greeting();
+greeting();
 
-// let rock = 0;
-// let paper = 1;
-// let scissors = 2;
+let rock = 0;
+let paper = 1;
+let scissors = 2;
 
-// function getComputerChoice(rock, paper, scissors) {
-//     return 0 + 1 + 2;
-//     console.log(rock, paper, scissors);
-// }
+function getComputerChoice(rock, paper, scissors) {
+    return 0 + 1 + 2;
+    console.log(rock, paper, scissors);
+}
 
-// getComputerChoice();
+getComputerChoice();
 
-// function getComputerChoice(rock, paper, scissors) {
-//     return rock
-// }
-// function getComputerChoice(rock, paper, scissors) {
-//     return (rock, paper, scissors);
-// }
+function getComputerChoice(rock, paper, scissors) {
+    return rock
+}
+function getComputerChoice(rock, paper, scissors) {
+    return (rock, paper, scissors);
+}
 
-// console.log(getComputerChoice());
+console.log(getComputerChoice()); */
 
 //function 1 randomly return either "rock", "paper", "scissors"
 function getComputerChoice() {
     let num = Math.floor(Math.random() * 3 );
 
     switch (num) {
-        case 0:
+        case 0: //tried "rock" nope
             return "rock";
             break;
         
-        case 1:
+        case 1:  //tried "paper" still nope
             return "paper";
             break;
 
@@ -57,15 +58,22 @@ const playerSelection = "rock";
 const computerSelection = getComputerChoice();
 
 function singleRound(playerSelection, computerSelection) {
-    if (pick.toLowerCase(playerSelection > computerSelection) ) {
+    if (pick?.toLowerCase(playerSelection > computerSelection) ) {
         return "You win!";
-    } else if (pick.toLowerCase(playerSelection < computerSelection) ) {
+    } else if (pick?.toLowerCase(playerSelection < computerSelection) ) {
         return "You lose :(";
     } else {
         return "it's a tie";
     }
 
-    return null;
+    // return null;
 }
 
-console.log(singleRound(playerSelection, computerSelection) );
+console.log(singleRound(playerSelection, computerSelection) ); 
+
+//this works
+/* let pick = prompt("Enter your 3 choices: Rock, Paper, Scissors");
+
+if (pick.toLowerCase() === "rock") {
+    alert("you chose Rock");
+} */
