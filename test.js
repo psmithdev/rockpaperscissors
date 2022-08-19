@@ -69,7 +69,9 @@ function singleRound(playerSelection, computerSelection) {
     // return null;
 }
 
-console.log(singleRound(playerSelection, computerSelection) ); 
+console.log(singleRound(playerSelection, computerSelection) );
+
+// console.log(prompt());
 
 //this works
 /* let pick = prompt("Enter your 3 choices: Rock, Paper, Scissors");
@@ -77,3 +79,17 @@ console.log(singleRound(playerSelection, computerSelection) );
 if (pick.toLowerCase() === "rock") {
     alert("you chose Rock");
 } */
+
+//ignored call prompt(), iframe sandbox "allow-modals" keyword not set
+// function allowModals(){
+//     for (const i of document.getElementsByTagName('iframe')) {
+//       if (!i.sandbox.supports('allow-modals')) {
+//         console.warn("Your browser doesn't support the 'allow-modals' attribute :(");
+//         break;
+//       }
+//       if (i.sandbox.contains('allow-modals')) continue;
+//       console.info(i, "doesn't allow modals");
+//       i.sandbox.add('allow-modals');
+//       console.info(i, 'now allows modals');
+//     }
+//   }
