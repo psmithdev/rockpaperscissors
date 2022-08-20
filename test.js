@@ -50,7 +50,7 @@ function getComputerChoice() {
     }
 }
 
-// console.log(getComputerChoice());
+console.log(getComputerChoice());
 
 let pick = prompt("Enter your 3 choices: Rock, Paper, Scissors");
 
