@@ -54,18 +54,31 @@ console.log(getComputerChoice());
 
 let pick = prompt("Enter your 3 choices: Rock, Paper, Scissors");
 
-const playerSelection = "rock";
+const playerSelection = getComputerChoice();
 const computerSelection = getComputerChoice();
 
 function singleRound(playerSelection, computerSelection) {
-    if (pick?.toLowerCase(playerSelection > computerSelection) ) {
-        return "You win!";
-    } else if (pick?.toLowerCase(playerSelection < computerSelection) ) {
-        return "You lose :(";
-    } else {
-        return "it's a tie";
-    }
+    // if (pick?.toLowerCase(playerSelection > computerSelection) ) {
+    //     return "You win!";
+    // } else if (pick?.toLowerCase(playerSelection < computerSelection) ) {
+    //     return "You lose :(";
+    // } else {
+    //     return "it's a tie";
+    // }
 
+    console.log(playerSelection)
+    console.log(computerSelection)
+
+
+    if (playerSelection == "rock" && computerSelection == "scissors" || 
+        playerSelection == "paper" && computerSelection == "rock" ||
+        playerSelection == "scissors" && computerSelection == "paper") {
+        return "You win!";
+    } else if (playerSelection == computerSelection)  {
+        return "it's a tie";
+    } else {
+        return "You lose :(";
+    }
     // return null;
 }
 
