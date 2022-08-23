@@ -38,3 +38,6 @@ o = rock
 2 = scissors
 
 A win , a loss, and a draw.
+
+8/22/2022
+new function game() will call the singleRound() function and play a 5 round game. Keep score and report the winner or loser at the end.  Use a for loop.  Get input from user with prompt()

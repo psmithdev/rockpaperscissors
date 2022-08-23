@@ -54,7 +54,7 @@ console.log(getComputerChoice());
 
 let pick = prompt("Enter your 3 choices: Rock, Paper, Scissors");
 
-const playerSelection = getComputerChoice();
+const playerSelection = "rock" "paper"; //getComputerChoice() two bots playing against each other
 const computerSelection = getComputerChoice();
 
 function singleRound(playerSelection, computerSelection) {
@@ -66,8 +66,8 @@ function singleRound(playerSelection, computerSelection) {
     //     return "it's a tie";
     // }
 
-    console.log(playerSelection)
-    console.log(computerSelection)
+    // console.log(playerSelection)
+    // console.log(computerSelection)
 
 
     if (playerSelection == "rock" && computerSelection == "scissors" || 
@@ -106,3 +106,16 @@ if (pick.toLowerCase() === "rock") {
 //       console.info(i, 'now allows modals');
 //     }
 //   }
+
+function game() {
+    function singleRound(){
+            for (let i = 0; i < 5; i++){
+                console.log(i);
+            }
+        }
+    }
+
+// console.log(game());
+
+// let messagePrompt = "enter your text here";
+// prompt(messagePrompt);
