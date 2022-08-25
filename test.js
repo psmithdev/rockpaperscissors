@@ -59,9 +59,11 @@ const playerSelection = "rock"; //getComputerChoice() two bots playing against e
 const computerSelection = getComputerChoice();
 
 function singleRound(playerSelection, computerSelection) {
-    if (playerSelection.toLowerCase() == "rock" && computerSelection == "scissors") {
+    if (playerSelection == "rock" && computerSelection == "scissors" ||
+        playerSelection == "paper" && computerSelection == "rock" ||
+        playerSelection == "scissors" && computerSelection == "paper") {
         return "You win!";
-    } else if (playerSelection.toLowerCase() == computerSelection) {
+    } else if (playerSelection == computerSelection) {
         return "it's a tie";
     } else {
         return "You lose :(";
@@ -70,7 +72,7 @@ function singleRound(playerSelection, computerSelection) {
 
 console.log(playerSelection, "//always rock for now");
 
-// function sinRound(playerSelection, computerSelection) {
+// function singleRound2(playerSelection, computerSelection) {
 //     if (pick?.toLowerCase(playerSelection > computerSelection) ) {
 //             return "You win!";
 //         } else if (pick?.toLowerCase(playerSelection < computerSelection) ) {
