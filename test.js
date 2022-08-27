@@ -53,14 +53,15 @@ function getComputerChoice() {
 console.log(getComputerChoice(), "//bot pick");
 
 
-// let pick = prompt("Enter your 3 choices: Rock, Paper, Scissors");
 
 const playerSelection = "rock"; //getComputerChoice() two bots playing against each other
 const computerSelection = getComputerChoice();
 
+console.log(getComputerChoice());
+
 function singleRound(playerSelection, computerSelection) {
     if (playerSelection == "rock" && computerSelection == "scissors" ||
-        playerSelection == "paper" && computerSelection == "rock" ||
+    playerSelection == "paper" && computerSelection == "rock" ||
         playerSelection == "scissors" && computerSelection == "paper") {
         return "You win!";
     } else if (playerSelection == computerSelection) {
@@ -72,31 +73,34 @@ function singleRound(playerSelection, computerSelection) {
 
 console.log(playerSelection, "//always rock for now");
 
+console.log(singleRound(playerSelection, computerSelection), getComputerChoice() );
+
+console.log(getComputerChoice(), "helloooooo");
+
 // function singleRound2(playerSelection, computerSelection) {
-//     if (pick?.toLowerCase(playerSelection > computerSelection) ) {
-//             return "You win!";
-//         } else if (pick?.toLowerCase(playerSelection < computerSelection) ) {
-//                 return "You lose :(";
+    //     if (pick?.toLowerCase(playerSelection > computerSelection) ) {
+        //             return "You win!";
+        //         } else if (pick?.toLowerCase(playerSelection < computerSelection) ) {
+            //                 return "You lose :(";
 //             } else {
-//                     return "it's a tie";
-//                 }
+    //                     return "it's a tie";
+    //                 }
+    
+    // console.log(computerSelection)
                 
-                // console.log(computerSelection)
-                
-                
+    
                 // if (playerSelection == "rock" && computerSelection == "scissors" || 
                 // playerSelection == "paper" && computerSelection == "rock" ||
                 // playerSelection == "scissors" && computerSelection == "paper") {
-                //     return "You win!";
+                    //     return "You win!";
                 // } else if (playerSelection == computerSelection)  {
-                //     return "it's a tie";
+                    //     return "it's a tie";
                 // } else {
                 //     return "You lose :(";
                 // }
-    // return null;
-
-console.log(singleRound(playerSelection, computerSelection) );
-
+                // return null;
+                
+                
 // comment out everything below
 /*
 
@@ -123,17 +127,36 @@ console.log(singleRound(playerSelection, computerSelection) );
                 //     }
                 //   }
                 
-                function game() {
-                    function singleRound(){
-                        for (let i = 0; i < 5; i++){
-                            console.log(i);
-                        }
-                    }
+            }
+            
+            // console.log(game());
+            
+            // let messagePrompt = "enter your text here";
+            // prompt(messagePrompt);
+            
+            */
+           
+function game() {
+    function singleRound(){
+        for (let i = 0; i < 5; i++){
+            let pick = prompt("Enter your 3 choices: Rock, Paper, Scissors");
     }
+}
+}
 
-// console.log(game());
+// game();
+console.log(game());
 
-// let messagePrompt = "enter your text here";
-// prompt(messagePrompt);
+// let number = 0;
+// while (number <= 6) {
+//     console.log(number);
+//     number = number + 2;
+// }
 
-*/
+let result = 1;
+let counter = 0;
+while (counter < 10) {
+    result = result * 2;
+    counter = counter + 1;
+}
+console.log(result);
