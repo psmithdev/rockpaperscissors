@@ -153,10 +153,21 @@ console.log(game());
 //     number = number + 2;
 // }
 
-let result = 1;
-let counter = 0;
-while (counter < 10) {
-    result = result * 2;
-    counter = counter + 1;
+// let result = 1;
+// let counter = 0;
+// while (counter < 10) {
+//     result = result * 2;
+//     counter = counter + 1;
+// }
+// console.log(result);
+
+// let yourName;
+// do {
+//     yourName = prompt("Who are you?");
+// } while (!yourName) {
+//     console.log(yourName);
+// }
+
+for (let number = 0; number <= 12; number + 2){
+    console.log(number);
 }
-console.log(result);
