@@ -50,32 +50,65 @@ function getComputerChoice() {
     }
 }
 
-console.log(getComputerChoice(), "//bot pick");
+function getPlayerChoice() { //replaced "rock" single choice with another function
+    // let num = Math.floor(Math.random() * 3 );
+    let num = prompt("Enter your 3 choices: Rock, Paper, Scissors");
+
+    switch (num) {
+        case "rock": //tried "rock" nope
+            return "rock";
+            break;
+        
+        case "paper":  //tried "paper" still nope
+            return "paper";
+            break;
+
+        case "scissors":
+            return "scissors";
+            break;
+
+        default:
+            return "that's not a valid choice";
+            break;
+    }
+}
+
+// console.log(getComputerChoice(), "//bot pick"); printing twice console log thats why no winner
 
 
-
-const playerSelection = "rock"; //getComputerChoice() two bots playing against each other
-const computerSelection = getComputerChoice();
-
-console.log(getComputerChoice());
 
 function singleRound(playerSelection, computerSelection) {
-    if (playerSelection == "rock" && computerSelection == "scissors" ||
-    playerSelection == "paper" && computerSelection == "rock" ||
-        playerSelection == "scissors" && computerSelection == "paper") {
+    if ((playerSelection == "rock" && computerSelection == "scissors") ||
+    (playerSelection == "paper" && computerSelection == "rock") ||
+    (playerSelection == "scissors" && computerSelection == "paper")) {
         return "You win!";
     } else if (playerSelection == computerSelection) {
         return "it's a tie";
+    } else if (playerSelection == "that's not a valid choice") {
+        return "errorrororrr";
     } else {
         return "You lose :(";
     }
 }
 
-console.log(playerSelection, "//always rock for now");
+for (let i = 0; i < 5; i++){
+    
+const playerSelection = getPlayerChoice(); //getComputerChoice() two bots playing against each other
+const computerSelection = getComputerChoice();
+console.log(computerSelection); //stuff function into variable
+console.log(playerSelection); //always rock for now"
+console.log(singleRound(playerSelection, computerSelection));
+}
 
-console.log(singleRound(playerSelection, computerSelection), getComputerChoice() );
 
-console.log(getComputerChoice(), "helloooooo");
+// const playerSelection2 = getPlayerChoice(); //getComputerChoice() two bots playing against each other
+// const computerSelection2 = getComputerChoice();
+// // singleRound(playerSelection2, computerSelection2); //invoked twice
+// console.log(computerSelection2); //stuff function into variable
+// console.log(playerSelection2); //always rock for now"
+// console.log(singleRound(playerSelection2, computerSelection2));
+
+// console.log(getComputerChoice(), "helloooooo");
 
 // function singleRound2(playerSelection, computerSelection) {
     //     if (pick?.toLowerCase(playerSelection > computerSelection) ) {
@@ -136,16 +169,18 @@ console.log(getComputerChoice(), "helloooooo");
             
             */
            
+// let pick = prompt("Enter your 3 choices: Rock, Paper, Scissors");
+
 function game() {
     function singleRound(){
         for (let i = 0; i < 5; i++){
-            let pick = prompt("Enter your 3 choices: Rock, Paper, Scissors");
     }
 }
 }
 
 // game();
-console.log(game());
+// console.log(game());
+// console.log(pick);
 
 // let number = 0;
 // while (number <= 6) {
@@ -168,6 +203,7 @@ console.log(game());
 //     console.log(yourName);
 // }
 
-for (let number = 0; number <= 12; number + 2){
-    console.log(number);
-}
+// for (let number = 0; number <= 12; number + 2){
+//     console.log(number);
+// } //this keeps running and killing my reload time
+
