@@ -53,13 +53,30 @@ function singleRound(playerSelection, computerSelection) {
     return "You lose :(";
   }
 }
+<<<<<<< Updated upstream
 
 // DOM manipulation
 getPlayerChoice();
 getComputerChoice();
 singleRound();
+=======
+// play a single round of the game
+// const playerSelection = getPlayerChoice();
+const computerSelection = getComputerChoice();
+console.log(computerSelection);
+
+// DOM manipulation
+const rock = document.querySelector("#rock");
+rock.addEventListener("click", () => {
+  console.log("you clicke rovvk");
+});
+
+let playerSelection = button.id;
+>>>>>>> Stashed changes
 
 const rock = document.querySelector("#rock");
 rock.addEventListener("click", () => {
   console.log("you clicke rovvk");
 });
+
+console.log(singleRound(playerSelection, computerSelection));
