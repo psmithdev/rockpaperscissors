@@ -53,6 +53,7 @@ function singleRound(playerSelection, computerSelection) {
     return "You lose :(";
   }
 }
+<<<<<<< HEAD
 // play a single round of the game
 // const playerSelection = getPlayerChoice();
 // const computerSelection = getComputerChoice();
@@ -65,9 +66,33 @@ function singleRound(playerSelection, computerSelection) {
 // rock.addEventListener("click", () => {
 //   console.log("you clicke rovvk");
 // });
+=======
+<<<<<<< Updated upstream
+
+// DOM manipulation
+getPlayerChoice();
+getComputerChoice();
+singleRound();
+=======
+// play a single round of the game
+// const playerSelection = getPlayerChoice();
+const computerSelection = getComputerChoice();
+console.log(computerSelection);
+
+// DOM manipulation
+const rock = document.querySelector("#rock");
+rock.addEventListener("click", () => {
+  console.log("you clicke rovvk");
+});
+
+let playerSelection = button.id;
+>>>>>>> Stashed changes
+>>>>>>> rps-ui
 
 document.body.addEventListener("click", (event) => {
   if (event.target.nodeName == "BUTTON") {
     console.log("Your choice is: ", event.target.textContent);
   }
 });
+
+console.log(singleRound(playerSelection, computerSelection));
