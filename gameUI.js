@@ -53,23 +53,16 @@ function singleRound(playerSelection, computerSelection) {
     return "You lose :(";
   }
 }
-// play a single round of the game
-// const playerSelection = getPlayerChoice();
-const computerSelection = getComputerChoice();
-console.log(computerSelection);
 
-// DOM manipulation
-const rock = document.querySelector("#rock");
-rock.addEventListener("click", () => {
-  console.log("you clicke rovvk");
-});
-
-let playerSelection = event.target.id;
+function buttonClick(event) {
+  const playerSelection = event.target.id;
+  const computerSelection = getComputerChoice();
+  singleRound(playerSelection, computerSelection);
+}
 
 document.body.addEventListener("click", (event) => {
   if (event.target.nodeName == "BUTTON") {
-    console.log("Your choice is: ", event.target.textContent);
+    console.log("Clicked", event.target.textContent);
+    return;
   }
 });
-
-console.log(singleRound(playerSelection, computerSelection));
