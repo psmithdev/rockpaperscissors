@@ -54,15 +54,10 @@ function singleRound(playerSelection, computerSelection) {
   }
 }
 
-function buttonClick(event) {
-  const playerSelection = event.target.id;
-  const computerSelection = getComputerChoice();
-  singleRound(playerSelection, computerSelection);
-}
+const buttons = document.querySelectorAll("button");
 
-document.body.addEventListener("click", (event) => {
-  if (event.target.nodeName == "BUTTON") {
-    console.log("Clicked", event.target.textContent);
-    return;
-  }
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    console.log(button.id);
+  });
 });
