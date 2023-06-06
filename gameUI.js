@@ -3,7 +3,9 @@ document.body.addEventListener("click", (event) => {
     console.log("clicked!", event.target.textContent);
     let playerSelection = event.target.textContent;
     let computerSelection = getComputerChoice();
-    singleRound(playerSelection, computerSelection);
+    console.log("Your pick:", playerSelection);
+    console.log("Computer choice:", computerSelection);
+    console.log(singleRound(playerSelection, computerSelection));
   }
 });
 
