@@ -1,3 +1,12 @@
+document.body.addEventListener("click", (event) => {
+  if (event.target.nodeName == "BUTTON") {
+    console.log("clicked!", event.target.textContent);
+    let playerSelection = event.target.textContent;
+    let computerSelection = getComputerChoice();
+    singleRound(playerSelection, computerSelection);
+  }
+});
+
 function getComputerChoice() {
   let num = Math.floor(Math.random() * 3);
 
@@ -12,28 +21,6 @@ function getComputerChoice() {
 
     default:
       return "scissors";
-      break;
-  }
-}
-
-function getPlayerChoice() {
-  let num = prompt("Enter your 3 choices: Rock, Paper, Scissors");
-
-  switch (num) {
-    case "rock":
-      return "rock";
-      break;
-
-    case "paper":
-      return "paper";
-      break;
-
-    case "scissors":
-      return "scissors";
-      break;
-
-    default:
-      return "that's not a valid choice";
       break;
   }
 }
@@ -53,11 +40,3 @@ function singleRound(playerSelection, computerSelection) {
     return "You lose :(";
   }
 }
-
-const buttons = document.querySelectorAll("button");
-
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    console.log(button.id);
-  });
-});
