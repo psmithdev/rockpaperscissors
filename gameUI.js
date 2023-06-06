@@ -1,7 +1,7 @@
 document.body.addEventListener("click", (event) => {
   if (event.target.nodeName == "BUTTON") {
     console.log("clicked!", event.target.textContent);
-    let playerSelection = event.target.textContent;
+    let playerSelection = event.target.id;
     let computerSelection = getComputerChoice();
     console.log("Your pick:", playerSelection);
     console.log("Computer choice:", computerSelection);
