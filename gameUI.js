@@ -4,6 +4,7 @@ document.body.addEventListener("click", (event) => {
     let playerSelection = event.target.id;
     let computerSelection = getComputerChoice();
     console.log("Your pick:", playerSelection);
+    document.getElementsByClassName("results").innerHTML = playerSelection;
     console.log("Computer choice:", computerSelection);
     console.log(singleRound(playerSelection, computerSelection));
   }
