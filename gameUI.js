@@ -42,3 +42,9 @@ function singleRound(playerSelection, computerSelection) {
     return "You lose :(";
   }
 }
+
+let div = document.createElement("div");
+div.className = "Results";
+div.innerHTML = "Hellooo your results please";
+
+document.body.append(div);
