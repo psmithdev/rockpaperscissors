@@ -4,7 +4,12 @@ document.body.addEventListener("click", (event) => {
     let playerSelection = event.target.id;
     let computerSelection = getComputerChoice();
     console.log("Your pick:", playerSelection);
-    document.getElementsByClassName("results").innerHTML = playerSelection;
+
+    let elements = document.getElementsByClassName("results");
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].innerHTML = playerSelection;
+    }
+
     console.log("Computer choice:", computerSelection);
     console.log(singleRound(playerSelection, computerSelection));
   }
@@ -43,9 +48,3 @@ function singleRound(playerSelection, computerSelection) {
     return "You lose :(";
   }
 }
-
-let div = document.createElement("div");
-div.className = "Results";
-div.innerHTML = "Hellooo your results please";
-
-document.body.append(div);
