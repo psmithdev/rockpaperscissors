@@ -25,3 +25,7 @@ button:active {
   height: 200px;
   border: 3px solid green;
 }
+
+.winner {
+  background-color: aqua;
+}
