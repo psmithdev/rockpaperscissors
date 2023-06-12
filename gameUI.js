@@ -12,7 +12,6 @@ document.body.addEventListener("click", (event) => {
     let elementTwo = document.getElementsByClassName("computer")[0];
     elementTwo.innerHTML = computerSelection;
 
-    console.log(singleRound(playerSelection, computerSelection)); // change thissssssss
     let elementThree = document.getElementsByClassName("winner")[0];
     elementThree.innerHTML = singleRound(playerSelection, computerSelection);
   }
