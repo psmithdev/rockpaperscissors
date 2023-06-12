@@ -3,15 +3,17 @@ document.body.addEventListener("click", (event) => {
     console.log("clicked!", event.target.textContent);
     let playerSelection = event.target.id;
     let computerSelection = getComputerChoice();
-    console.log("Your pick:", playerSelection);
 
-    let elements = document.getElementsByClassName("results");
-    for (var i = 0; i < elements.length; i++) {
-      elements[i].innerHTML = playerSelection;
+    let elementOne = document.getElementsByClassName("player");
+    for (var i = 0; i < elementOne.length; i++) {
+      elementOne[i].innerHTML = playerSelection;
     }
 
-    console.log("Computer choice:", computerSelection);
-    console.log(singleRound(playerSelection, computerSelection));
+    console.log("Computer choice:", computerSelection); // change thissssssss
+    let elementTwo = document.getElementsByClassName("computer")[0];
+    elementTwo.innerHTML = computerSelection;
+
+    console.log(singleRound(playerSelection, computerSelection)); // change thissssssss
   }
 });
 
