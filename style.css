@@ -1,15 +1,23 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 button {
-  background-color: #4caf50; /* Green */
+  background-color: #4caf50;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 20px 40px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
+  border-radius: 12px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition for hover and active states */
 }
+
 button:hover {
   background-color: #3e8e41;
+  transform: scale(1.1); /* Slightly enlarges button on hover */
 }
 
 button:active {
