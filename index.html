@@ -5,25 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors UI</title>
-    <link rel="shortcut icon" href="#" //GET http://127.0.0.1:5501/favicon.ico
-    error message />
+    <script src="gameUI.js" defer></script>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- <iframe
-      sandbox="allow-top-navigation allow-modals allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
-      src="http://127.0.0.1:3000/rockpaperscissors/index.html"
-    ></iframe>
-    prompt(); -->
-
-    <!-- <button onclick="allowModals()" style="display: block">Allow modals</button>
-    <iframe src="http://127.0.0.1:3000/rockpaperscissors/index.html"></iframe> -->
-
-    <!-- <iframe
-      src="-url:vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js"
-    ></iframe> -->
-
-    <!-- <iframe sandbox="" src="" frameborder="0"></iframe> -->
-
-    <script src="test.js"></script>
+    <div class="container">
+      <div class="game-intro">
+        <h1>Rock, Paper, Scissors Game</h1>
+        <p>
+          Welcome to the classic game of Rock, Paper, Scissors! To play, simply
+          click on your choice of Rock, Paper, or Scissors, and the computer
+          will make its choice. The results of the round will be displayed
+          below. Have fun!
+        </p>
+      </div>
+      <div class="choices">
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+      </div>
+      <div class="results">
+        <div class="player-result">
+          <h4>Player Choice</h4>
+          <div class="player">Player</div>
+        </div>
+        <div class="computer-result">
+          <h4>Computer Choice</h4>
+          <div class="computer">Computer</div>
+        </div>
+        <div class="winner-result">
+          <h2>Single Round Winner:</h2>
+          <div class="winner"></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
