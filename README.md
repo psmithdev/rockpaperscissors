@@ -31,3 +31,5 @@ Plans for future updates to this project include:
 # Usage
 
 To play the game, simply load the website in your browser, open the console, and follow the on-screen instructions.
+
+Check out the live demo of the game [here](https://psmithdev.github.io/rockpaperscissors/)
