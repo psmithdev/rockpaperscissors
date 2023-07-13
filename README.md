@@ -2,18 +2,14 @@
 
 This repository contains a simple, grade-school style "Rock, Paper, Scissors" game designed to be played in the browser console. The game pits the user against the computer in a classic game of chance and strategy.
 
-Pseudo/Plan:
+# How It Works
 
-Game will be played against the computer.
+The game revolves around two key functions:
 
-1. Write a function "getComputerChoice" that will randomly return either "Rock", "Paper", or "Scissors".
+    getComputerChoice: This function randomly returns the computer's choice of "Rock", "Paper", or "Scissors".
+    playRound: This function conducts a single round of the game. It takes two parameters: the "playerSelection" and the "computerSelection". It returns a string declaring the round's winner.
 
-2. Write a function that plays a single round of rock paper scissors. The function will have two parameters "playerSelection" and "computerSelection", return a string declaring the winner.
-
-<<<<<<< HEAD //decided no arrays for this, that is the challenge
-Make function "playerSelection" case-insensitive.
-
-Make an array [0, 1 ,2] and assign each number to a string. Example: 0 = rock, 1 = paper, 2 = scissors.
+In addition, the game function plays a 5-round series, keeping score and reporting the overall winner at the end.
 
 # Start off with just 2-3 choices. Expand to Rock, Paper, Scissors, LIZARD and SPOCK.
 
