@@ -11,12 +11,15 @@ The game revolves around two key functions:
 
 In addition, the game function plays a 5-round series, keeping score and reporting the overall winner at the end.
 
-# Start off with just 2-3 choices. Expand to Rock, Paper, Scissors, LIZARD and SPOCK.
+# Gameplay Logic
 
-Make function "playerSelection" case-insensitive.
+The game follows the classic rules:
 
-> > > > > > > ce2e73119bbb8929c9950ef002dbdfe5bc1e8747
+    Rock beats Scissors
+    Scissors beat Paper
+    Paper beats Rock
 
+Ties are possible if both the player and computer make the same choice.
 8/20/2022
 3 strings "rock" "paper" "scissors"
 How to make computer know which string beats which?
