@@ -26,12 +26,6 @@ Plans for future updates to this project include:
     Making the game case-insensitive, allowing inputs like "rock", "ROCK", or "RoCk" to be accepted.
     Expanding the game to include additional choices, namely "Lizard" and "Spock".
 
-Assign a number to a string?
-o = rock
-1 = paper
-2 = scissors
+# Usage
 
-A win , a loss, and a draw.
-
-8/22/2022
-new function game() will call the singleRound() function and play a 5 round game. Keep score and report the winner or loser at the end. Use a for loop. Get input from user with prompt()
+To play the game, simply load the website in your browser, open the console, and follow the on-screen instructions.
