@@ -1,7 +1,6 @@
-# rockpaperscissors
- Project: Rock Paper Scissors 
+# Rock, Paper, Scissors Game
 
-Simple grade-school style game of "Rock paper scissors" through the browser console.
+This repository contains a simple, grade-school style "Rock, Paper, Scissors" game designed to be played in the browser console. The game pits the user against the computer in a classic game of chance and strategy.
 
 Pseudo/Plan:
 
@@ -14,12 +13,13 @@ Game will be played against the computer.
 <<<<<<< HEAD //decided no arrays for this, that is the challenge
 Make function "playerSelection" case-insensitive.
 
-Make an array [0, 1 ,2] and assign each number to a string.  Example: 0 = rock, 1 = paper, 2 = scissors.
+Make an array [0, 1 ,2] and assign each number to a string. Example: 0 = rock, 1 = paper, 2 = scissors.
 
-Start off with just 2-3 choices.  Expand to Rock, Paper, Scissors, LIZARD and SPOCK.
-=======
+# Start off with just 2-3 choices. Expand to Rock, Paper, Scissors, LIZARD and SPOCK.
+
 Make function "playerSelection" case-insensitive.
->>>>>>> ce2e73119bbb8929c9950ef002dbdfe5bc1e8747
+
+> > > > > > > ce2e73119bbb8929c9950ef002dbdfe5bc1e8747
 
 8/20/2022
 3 strings "rock" "paper" "scissors"
@@ -40,4 +40,4 @@ o = rock
 A win , a loss, and a draw.
 
 8/22/2022
-new function game() will call the singleRound() function and play a 5 round game. Keep score and report the winner or loser at the end.  Use a for loop.  Get input from user with prompt()
+new function game() will call the singleRound() function and play a 5 round game. Keep score and report the winner or loser at the end. Use a for loop. Get input from user with prompt()
