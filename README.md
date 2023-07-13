@@ -2,6 +2,8 @@
 
 This repository contains a simple, grade-school style "Rock, Paper, Scissors" game designed to be played in the browser console. The game pits the user against the computer in a classic game of chance and strategy.
 
+![Gameplay](https://github.com/psmithdev/rockpaperscissors/assets/69760520/69fa7968-55f1-4903-8cc7-82cf4debd3c1)
+
 # How It Works
 
 The game revolves around two key functions:
