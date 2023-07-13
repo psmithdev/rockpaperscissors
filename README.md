@@ -19,17 +19,12 @@ The game follows the classic rules:
     Scissors beat Paper
     Paper beats Rock
 
-Ties are possible if both the player and computer make the same choice.
-8/20/2022
-3 strings "rock" "paper" "scissors"
-How to make computer know which string beats which?
-Rock beats scissors? rock > scissors
-Paper > rock
-Scissors > paper
+# Future Developments
 
-paper = paper is a draw
-scissors = scissors is a draw
-rock = rock is a draw
+Plans for future updates to this project include:
+
+    Making the game case-insensitive, allowing inputs like "rock", "ROCK", or "RoCk" to be accepted.
+    Expanding the game to include additional choices, namely "Lizard" and "Spock".
 
 Assign a number to a string?
 o = rock
