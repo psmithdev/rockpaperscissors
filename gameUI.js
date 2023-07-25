@@ -18,6 +18,13 @@ document.body.addEventListener("click", (event) => {
 
     let elementThree = document.getElementsByClassName("winner")[0];
     elementThree.innerHTML = singleRound(playerSelection, computerSelection);
+
+    let playerScoreUpdate = document.getElementsByClassName("playerScore")[0];
+    playerScoreUpdate.innerHTML = playerScore;
+
+    let computerScoreUpdate =
+      document.getElementsByClassName("computerScore")[0];
+    computerScoreUpdate.innerHTML = computerScore;
   }
 });
 
