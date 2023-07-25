@@ -53,13 +53,11 @@ function singleRound(playerSelection, computerSelection) {
     (playerSelection == "scissors" && computerSelection == "paper")
   ) {
     playerScore++;
-    console.log(playerScore);
     return "You win!";
   } else if (playerSelection == computerSelection) {
     return "it's a tie";
   } else {
     computerScore++;
-    console.log(computerScore);
     return "You lose :(";
   }
 }
