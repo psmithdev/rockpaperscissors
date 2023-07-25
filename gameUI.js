@@ -1,3 +1,7 @@
+// keep track of score for each round
+let playerScore = 0;
+let computerScore = 0;
+
 document.body.addEventListener("click", (event) => {
   if (event.target.nodeName == "BUTTON") {
     console.log("clicked!", event.target.textContent);
@@ -41,12 +45,16 @@ function singleRound(playerSelection, computerSelection) {
     (playerSelection == "paper" && computerSelection == "rock") ||
     (playerSelection == "scissors" && computerSelection == "paper")
   ) {
+    playerScore++;
+    console.log(playerScore);
     return "You win!";
   } else if (playerSelection == computerSelection) {
     return "it's a tie";
-  } else if (playerSelection == "that's not a valid choice") {
-    return "errorrororrr";
   } else {
+    computerScore++;
+    console.log(computerScore);
     return "You lose :(";
   }
 }
+
+function displayScore() {}
