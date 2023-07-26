@@ -1,4 +1,3 @@
-// keep track of score for each round
 let playerScore = 0;
 let computerScore = 0;
 
@@ -19,12 +18,20 @@ document.body.addEventListener("click", (event) => {
     let elementThree = document.getElementsByClassName("winner")[0];
     elementThree.innerHTML = singleRound(playerSelection, computerSelection);
 
-    let playerScoreUpdate = document.getElementsByClassName("playerScore")[0];
-    playerScoreUpdate.innerHTML = playerScore;
+    displayScore();
+  }
 
-    let computerScoreUpdate =
-      document.getElementsByClassName("computerScore")[0];
-    computerScoreUpdate.innerHTML = computerScore;
+  let playerWinner = "You win the game!";
+  let computerWinner = "Computer wins this time...";
+
+  if (playerScore >= 5) {
+    let playerWinnerFun = document.getElementsByClassName("results")[0];
+    playerWinnerFun.innerHTML = `<b class="fadein">${playerWinner} 🏆</b>`;
+  } else {
+    if (computerScore >= 5) {
+      let computerWinnerFun = document.getElementsByClassName("results")[0];
+      computerWinnerFun.innerHTML = `<i class="fadein">${computerWinner} </i>`;
+    }
   }
 });
 
@@ -62,4 +69,10 @@ function singleRound(playerSelection, computerSelection) {
   }
 }
 
-function displayScore() {}
+function displayScore() {
+  let playerScoreUpdate = document.getElementsByClassName("playerScore")[0];
+  playerScoreUpdate.innerHTML = playerScore;
+
+  let computerScoreUpdate = document.getElementsByClassName("computerScore")[0];
+  computerScoreUpdate.innerHTML = computerScore;
+}
