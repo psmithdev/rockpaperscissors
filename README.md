@@ -6,12 +6,13 @@ This repository contains a simple, grade-school style "Rock, Paper, Scissors" ga
 
 # How It Works
 
-The game revolves around two key functions:
+The game revolves around three key functions:
 
     getComputerChoice: This function randomly returns the computer's choice of "Rock", "Paper", or "Scissors".
-    playRound: This function conducts a single round of the game. It takes two parameters: the "playerSelection" and the "computerSelection". It returns a string declaring the round's winner.
+    singleRound: This function conducts a single round of the game. It takes two parameters: the "playerSelection" and the "computerSelection". It returns a string declaring the round's winner.
+    displayScore: This function updates the score display in the browser.
 
-In addition, the game function plays a 5-round series, keeping score and reporting the overall winner at the end.
+The game plays until either the player or the computer reaches a score of 5 points, at which point the game announces the winner and ends.
 
 # Gameplay Logic
 
@@ -25,7 +26,7 @@ The game follows the classic rules:
 
 Plans for future updates to this project include:
 
-    Making the game case-insensitive, allowing inputs like "rock", "ROCK", or "RoCk" to be accepted.
+    Adding a button to restart the game after it ends.
     Expanding the game to include additional choices, namely "Lizard" and "Spock".
 
 # Usage
